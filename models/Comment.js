@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Comment extends Model {}
 
 Project.init(
   {
@@ -11,19 +11,12 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
-    },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
-    user_id: {
+
+text: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+},
+    project_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
@@ -40,4 +33,4 @@ Project.init(
   }
 );
 
-module.exports = Project;
+module.exports = Comment;
