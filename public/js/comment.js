@@ -10,7 +10,7 @@ const newFormHandler = async (event) => {
             headers: {
                 'content-type': 'application/json',
             },
-        }):
+        });
 
         if (response.ok) {
             document.location.replace('/dashboard');
@@ -39,6 +39,11 @@ document
     .querySelector('.new-comment-form')
     .addEventListener('submit', newFormHandler);
 
+    // document
+    // .querySelector('.comment-list')
+    // .addEventListener('click', newFormHandler);
+    
     document
     .querySelector('.comment-list')
-    .addEventListener('click', newFormHandler);
+    .parentElement.addEventListener('click', delButtonHandler);
+
