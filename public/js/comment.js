@@ -8,9 +8,10 @@ const newFormHandler = async (event) => {
             method: 'POST',
             body: JSON.stringify({ text }),
             headers: {
-                'content-type': 'application/json',
+                'Content-Type': 'application/json',
             },
         });
+        console.log(response)
 
         if (response.ok) {
             document.location.replace('/dashboard');
@@ -41,7 +42,7 @@ document
 
     document
     .querySelector('.comment-list')
-    .addEventListener('click', newFormHandler);
+    .addEventListener('click', delButtonHandler);
     
     // document
     // .querySelector('.comment-list')
