@@ -39,11 +39,11 @@ document
     .querySelector('.new-comment-form')
     .addEventListener('submit', newFormHandler);
 
-    // document
-    // .querySelector('.comment-list')
-    // .addEventListener('click', newFormHandler);
-    
     document
     .querySelector('.comment-list')
-    .parentElement.addEventListener('click', delButtonHandler);
+    .addEventListener('click', newFormHandler);
+    
+    // document
+    // .querySelector('.comment-list')
+    // .parentElement.addEventListener('click', delButtonHandler);
 

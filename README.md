@@ -38,3 +38,45 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+
+# Tech Blog Wordsmith
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+  <li><a href="#project-description">Project Description</a></li>
+  <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage-information">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#test-instructions">Testing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#questions">Questions</a></li>
+  </ol>
+</details>
+
+## Project Description
+Welcome! Using Handlebars, Express, and mysql2, I present a tech blog where you can sign up for an account, 
+
+## Installation
+No install needed, just follow the link!
+
+https://tech-blog-wordsmith.herokuapp.com/login
+
+## Usage Information
+It's a simple web editor, built on a complex base using idb.
+
+## Contributing
+### Guidelines
+No contributions please. Feel welcome to fork or clone.
+
+## Test Instructions
+Follow the deployed link and click the install button. The app should install in your browser.
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT "Click to view the MIT License on opensource.org")
+## Questions
+
+### Please reach out via the links below to reach me with additional questions.
+
+#### https://github.com/itlleat
+#### scott.schulman84@gmail.com
